@@ -18,11 +18,11 @@ num_records = {}
 
 # Open the CSV file. Any lines indented after this while statement
 # have access to the CSV data from the file.
-with open(file_to_load) as election_data:
+with open(file_to_load) as mile_data:
 
     # Create a new variabe "reader" which is used to access the CSV
     # data line by line.
-    reader = csv.reader(election_data)
+    reader = csv.reader(mile_data)
 
     # Read the header, print it out, but we don't use it
     header = next(reader)
